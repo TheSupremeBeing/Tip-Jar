@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="iaS-HL-UJU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="iaS-HL-UJU">
     <dependencies>
-        <deployment defaultVersion="1296" identifier="iOS"/>
-        <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
     <scenes>
         <!--Third View Controller - Item-->
         <scene sceneID="zwi-8e-4ge">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kSP-Qf-NWd" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="ITd-xP-nDO" customClass="ThirdViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FPy-HO-dC4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="431"/>
@@ -124,13 +121,13 @@
                         <outlet property="myTitle" destination="hae-9f-YgC" id="5De-jI-dhK"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kSP-Qf-NWd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="380" y="860"/>
         </scene>
         <!--Second View Controller - Item 2-->
         <scene sceneID="CLN-EG-yAT">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wO8-sR-a14" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="50h-cY-9Tw" customClass="SecondViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1dA-PH-82b">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="431"/>
@@ -165,17 +162,17 @@
                         <outlet property="myTitle" destination="lxe-Fk-ZQf" id="8hy-mx-vgB"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wO8-sR-a14" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="380" y="287"/>
         </scene>
         <!--First View Controller - Item 1-->
         <scene sceneID="Nve-jF-hnH">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PTX-aO-gR0" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="GKS-A1-sER" customClass="FirstViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="sbN-yB-vAL">
+                    <view key="view" contentMode="scaleToFill" id="sbN-yB-vAL" customClass="UICollectionView">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="431"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Blank.png" id="KGy-zB-v9L">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="431"/>
@@ -315,13 +312,13 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <outlet property="myTotalTips" destination="bek-4F-v9C" id="f7e-Or-Oy2"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PTX-aO-gR0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="380" y="-278"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="tLu-u2-Pmc">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4dd-gG-Bl8" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController definesPresentationContext="YES" id="iaS-HL-UJU" sceneMemberID="viewController">
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
@@ -338,6 +335,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <segue destination="ITd-xP-nDO" kind="relationship" relationship="viewControllers" id="WTH-sU-k6u"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4dd-gG-Bl8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-166" y="287"/>
         </scene>
@@ -352,52 +350,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <image name="facebook-icon.png" width="512" height="512"/>
         <image name="twitter-icon.png" width="512" height="512"/>
     </resources>
-    <classes>
-        <class className="FirstViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="hideKeyboardAndPicker:"/>
-                <relationship kind="action" name="saveShiftButton:"/>
-                <relationship kind="action" name="setTime:" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="myAddButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="myAddTipLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="myDoneButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="myEditButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="myEditField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="myEditLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="myEndButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="myPicker" candidateClass="UIDatePicker"/>
-                <relationship kind="outlet" name="mySaveButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="myStartButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="myTipField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="myTipsLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="myTitle" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="myTotalTips" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="SecondViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SecondViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="myTable" candidateClass="UITableView"/>
-                <relationship kind="outlet" name="myTitle" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="ThirdViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ThirdViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="facebook:"/>
-                <relationship kind="action" name="share:" candidateClass="UIButton"/>
-                <relationship kind="action" name="twitter:"/>
-                <relationship kind="outlet" name="myFollowLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="myFrameLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="myMoneyMade" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="myPicker" candidateClass="UIPickerView"/>
-                <relationship kind="outlet" name="myShareButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="myTimeWorked" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="myTitle" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <nil key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
